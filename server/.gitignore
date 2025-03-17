@@ -1,0 +1,56 @@
+# Ignore build and publish artifacts
+bin/
+obj/
+**/bin/
+**/obj/
+**/out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Rider and ReSharper files
+.idea/
+*.sln.iml
+
+# ASP.NET-specific files
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+
+# Logs and database files
+logs/
+*.log
+**/*.db
+**/*.sqlite
+**/migrations/
+
+# Node.js dependencies (if using frontend with ASP.NET Core)
+node_modules/
+yarn.lock
+package-lock.json
+
+# Environment variables
+.env
+
+# Publish output
+.publish/
+.Dockerfile.build
+
+# Temporary files
+*.bak
+*.swp
+
+# JetBrains Rider specific
+.idea/
+
+# Resharper and Rider
+*.DotSettings.user
+
+# Docker
+docker-compose.override.yml
