@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|c:\\users\\che pillay\\source\\repos\\travelx\\travelx\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|solutionrelative:travelx\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|c:\\users\\che pillay\\source\\repos\\travelx\\travelx\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|solutionrelative:travelx\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|c:\\users\\che pillay\\source\\repos\\travelx\\travelx\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|solutionrelative:travelx\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|c:\\users\\che pillay\\source\\repos\\travelx\\travelx\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|solutionrelative:travelx\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF683F0D-E947-4B33-A0A2-F9ACE1EA704D}|TravelX\\TravelX.csproj|c:\\users\\che pillay\\source\\repos\\travelx\\travelx\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Models\\LoginModel.cs",
               "RelativeDocumentMoniker": "TravelX\\Models\\LoginModel.cs",
@@ -47,7 +51,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T13:49:38.514Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -59,7 +68,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TravelX\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TravelX\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T07:11:46.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "TravelX\\Models\\ApplicationDbContext.cs",
@@ -71,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Program.cs",
               "RelativeDocumentMoniker": "TravelX\\Program.cs",
@@ -83,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "TravelX\\Controllers\\AuthController.cs",
@@ -95,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RegisterModel.cs",
               "DocumentMoniker": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Models\\RegisterModel.cs",
               "RelativeDocumentMoniker": "TravelX\\Models\\RegisterModel.cs",
@@ -107,16 +128,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "TravelX\\Models\\ApplicationUser.cs",
               "ToolTip": "C:\\Users\\Che Pillay\\source\\repos\\TravelX\\TravelX\\Models\\ApplicationUser.cs",
               "RelativeToolTip": "TravelX\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T12:47:30.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T12:47:30.715Z"
             }
           ]
         }
