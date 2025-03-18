@@ -7,30 +7,32 @@ namespace server.Controllers
 {
     [Route("api/users")]
     
-    [ApiController]
+    [ApiController] // Makes this an API controller
     public class UserController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
 
+        // Connects this controller to the database
         public UserController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
 
-        // Register User
-        [HttpPost("register")]
+         //Registers a new user
+        [HttpPost("register")] // This is a endpoint for /api/users/register 
         public async Task<IActionResult> Register([FromBody] RegisterModel registerData)
         {
+            // Checks if the request data is correct
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // Check if the user already exists
+            // Checks if the user already exists
             if (await _userRepository.UserExist(registerData.Email))
             {
                 return BadRequest(new { message = "User already exists." });
             }
 
-            // Register the user
+            // Creates a new user
             var userModel = new UserModel
             {
                 Name = registerData.Name,
@@ -39,16 +41,17 @@ namespace server.Controllers
                 Contact = registerData.Contact,
                 Email = registerData.Email,
                 Password = registerData.Password,
-                Terms = registerData.Terms // Store the password as it is (ensure you handle it properly in your repository)
+                Terms = registerData.Terms 
             };
 
+            // Saves the user to the database
             var user = await _userRepository.Register(userModel);
 
             return Ok(new { message = "User registered successfully." });
         }
 
         // Login User
-        [HttpPost("login")]
+        [HttpPost("login")] // This is a endpoint for /api/users/login
         public async Task<IActionResult> Login([FromBody] LoginModel loginData)
         {
             if (!ModelState.IsValid)

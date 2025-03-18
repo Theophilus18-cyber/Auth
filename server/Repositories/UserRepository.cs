@@ -8,12 +8,13 @@ public class UserRepository : IUserRepository
 {
     private readonly DataContext _context;
 
+    // Connects to the database
     public UserRepository(DataContext context)
     {
         _context = context;
     }
 
-    // Register logic with direct password assignment
+      // Register a new user
     public async Task<UserModel> Register(RegisterModel registerData)
     {
         var user = new UserModel
@@ -23,23 +24,23 @@ public class UserRepository : IUserRepository
             IdOrPassport = registerData.IdOrPassport,
             Contact = registerData.Contact,
             Email = registerData.Email,
-            Password = registerData.Password  // Directly assign the password from RegisterModel
+            Password = registerData.Password  // Directly assigns the password from RegisterModel
         };
 
-        // Add the user to the database
+        // Saves user in database
         await _context.Users.AddAsync(user);
         await _context.SaveChangesAsync();
 
         return user;  // Return the registered user
     }
 
-    // Login logic (plain text password comparison)
+     // Login user (checks email or ID & compares password)
     public async Task<UserModel?> Login(string emailOrId, string password)
     {
         var user = await _context.Users
             .FirstOrDefaultAsync(u => u.Email == emailOrId || u.IdOrPassport == emailOrId);
 
-        if (user == null || user.Password != password)  // Direct comparison (plain text)
+        if (user == null || user.Password != password)  // Checks if user exists and password matches
             return null;
 
         return user;
@@ -51,7 +52,7 @@ public class UserRepository : IUserRepository
         return await _context.Users.AnyAsync(u => u.Email == emailOrId || u.IdOrPassport == emailOrId);
     }
 
-    // Implement the Register method
+    // (Duplicate Register Method) Register UserModel directly
     public async Task<UserModel> Register(UserModel user)
     {
         await _context.Users.AddAsync(user);

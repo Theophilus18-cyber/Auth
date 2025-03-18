@@ -9,13 +9,16 @@ using server.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// Connects to the database
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Register UserRepository for handling user data
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
+//Add support for controllers
 builder.Services.AddControllers();
+//Enable API documentation with Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -24,26 +27,26 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
     {
-        builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader();
+        builder.AllowAnyOrigin() // Accepts requests from anywhere
+               .AllowAnyMethod() // Allows all HTTP methods (GET, POST, etc.)
+               .AllowAnyHeader();// Allows all headers
     });
 });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
+// Enable Swagger for API testing in developmente
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
+app.UseHttpsRedirection(); // Redirects HTTP requests to HTTPS
+app.UseAuthorization(); // Use authorization for protected routes
 
 // Use CORS policy
 app.UseCors("AllowAll");
 
-app.MapControllers();
-app.Run();
+app.MapControllers(); // Maps the controllers to the application
+app.Run(); //starts the application
